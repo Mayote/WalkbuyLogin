@@ -91,8 +91,12 @@
         android:id="@+id/imageView10"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:srcCompat="@drawable/circle1"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="546dp" />
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="16dp"
+        android:scaleX="2.5"
+        android:scaleY="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:srcCompat="@drawable/circle1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
