@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
@@ -24,6 +25,7 @@ class PublicationAdapter(var context: Context, var listPublication: MutableList<
         var category: TextView = itemView.findViewById(R.id.HolderCategory)
         var cantidad: TextView = itemView.findViewById(R.id.HolderQuantity)
         var image: ImageView = itemView.findViewById(R.id.HolderImage)
+
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int

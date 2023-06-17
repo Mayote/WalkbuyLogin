@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.walkbuylogin.Adapter.PublicationAdapter
@@ -23,12 +22,12 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        addBtn = findViewById(R.id.MenuAdd_btn)
+        addBtn = findViewById(R.id.btn_userpublications)
 
-        listView = findViewById(R.id.recyclerViewSingle)
+        listView = findViewById(R.id.PublicationsRecyclerView)
 
         addBtn.setOnClickListener {
-            val intent = Intent(this, CreateProductActivity::class.java)
+            val intent = Intent(this, UserPublicationsActivity::class.java)
             startActivity(intent)
         }
 

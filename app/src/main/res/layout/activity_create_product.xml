@@ -119,6 +119,21 @@
             android:inputType="number"
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/CreatePriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:layout_width="match_parent"
@@ -130,13 +145,13 @@
         <EditText
             android:id="@+id/CreateDescriptionInput"
             android:layout_width="match_parent"
-            android:layout_height="165dp"
+            android:layout_height="109dp"
             android:ems="10"
             android:inputType="textLongMessage" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="40dp" />
 
         <Button
             android:id="@+id/CreateAdd_btn"

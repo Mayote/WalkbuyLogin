@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
+    tools:context=".UserPublicationsActivity">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
@@ -36,9 +36,11 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_publications"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/green"
                 android:text="Publicaciones"
                 android:textSize="10sp"
                 app:cornerRadius="50dp" />
@@ -48,14 +50,13 @@
                 android:layout_height="wrap_content" />
 
             <Button
-                android:id="@+id/btn_userpublications"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/green"
                 android:text="Mis publicaciones"
                 android:textSize="10sp"
                 app:cornerRadius="50dp" />
+
         </LinearLayout>
 
         <Space
@@ -63,12 +64,25 @@
             android:layout_height="10dp" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/PublicationsRecyclerView"
+            android:id="@+id/UserPublicationsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="horizontal|vertical"
             android:orientation="horizontal"/>
 
     </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_add_publication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

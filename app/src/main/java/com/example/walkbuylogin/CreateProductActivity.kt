@@ -6,8 +6,6 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
-import android.view.Gravity
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -23,7 +21,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import java.text.DecimalFormat
 import java.util.*
 import kotlin.collections.HashMap
 
@@ -67,7 +64,7 @@ class CreateProductActivity : AppCompatActivity() {
 
         title = findViewById(R.id.CreateTitleInput)
         category = findViewById(R.id.CreateCategoryInput)
-        quantity = findViewById(R.id.CreateQuantityInput)
+        quantity = findViewById(R.id.CreatePriceInput)
         description = findViewById(R.id.CreateDescriptionInput)
 
         val id = intent.getStringExtra("id")
